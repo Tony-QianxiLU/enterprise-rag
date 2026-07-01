@@ -1,0 +1,5 @@
+{"id": "onboarding-benefits", "question": "When can a new employee enroll in health benefits?", "expected_source": "employee-onboarding.txt", "expected_terms": ["30 days", "benefits enrollment portal"]}
+{"id": "security-password-policy", "question": "How often must employees rotate their passwords under the security policy?", "expected_source": "security-policy.txt", "expected_terms": ["every 90 days", "multi-factor authentication"]}
+{"id": "product-faq-refund", "question": "What is the refund window described in the product FAQ?", "expected_source": "product-faq.txt", "expected_terms": ["30-day refund window", "billing@acme.example"]}
+{"id": "incident-response-severity", "question": "Who must be notified when a Severity 1 incident is declared?", "expected_source": "incident-response-runbook.txt", "expected_terms": ["Severity 1", "on-call incident commander"]}
+{"id": "vendor-contract-termination", "question": "What notice period is required to terminate the vendor contract?", "expected_source": "vendor-contract-summary.txt", "expected_terms": ["60 days written notice", "Acme Cloud Services"]}

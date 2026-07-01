@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     chunk_overlap_tokens: int = 60
 
     # Auth
-    jwt_secret: str = "change-me-in-production"
+    jwt_secret: str = "change-me-in-production-use-a-long-random-secret"
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 12
 

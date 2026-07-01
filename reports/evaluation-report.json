@@ -1,0 +1,85 @@
+{
+  "total_cases": 5,
+  "retrieval_accuracy": 1.0,
+  "citation_coverage": 1.0,
+  "groundedness_rate": 1.0,
+  "overall_pass_rate": 1.0,
+  "average_latency_ms": 3.047408163547516,
+  "results": [
+    {
+      "case_id": "onboarding-benefits",
+      "question": "When can a new employee enroll in health benefits?",
+      "answer": "Relevant context was retrieved from the uploaded documents. Configure OPENAI_API_KEY to enable LLM-generated answers.\n\nRecent conversation:\n(none)\n\nRetrieved context:\nSource: employee-onboarding.txt\nEmployee Onboarding Guide. New hires must complete identity verification and laptop setup during their first week. Employees may enroll in health benefits within 30 days of their start date through the benefits enrollment portal. Missing this window requires waiting for the next open enrollment period unless a qualifying life event occurs.\n\nSource: product-faq.txt\nProduct FAQ. Customers are eligible for a refund within the 30-day refund window starting from the purchase date, provided the subscription has not been used beyond the trial limits. Refund requests should be sent to billing@acme.example with the original order number.\n\nSource: incident-response-runbook.txt\nIncident Response Runbook. When an on-call engineer declares a Severity 1 incident, the on-call incident commander must be notified immediately and a war room bridge opened within fifteen minutes. Lower severity incidents follow the standard triage queue during business hours.\n\nSource: security-policy.txt\nInformation Security Policy. All employees must rotate account passwords every 90 days and enable multi-factor authentication on every corporate system. Shared credentials are prohibited, and suspected compromises must be reported to the security team within one hour of discovery.\n\nQuestion: When can a new employee enroll in health benefits?",
+      "citations": [
+        "employee-onboarding.txt",
+        "product-faq.txt",
+        "incident-response-runbook.txt",
+        "security-policy.txt"
+      ],
+      "retrieval_passed": true,
+      "citation_passed": true,
+      "groundedness_passed": true,
+      "latency_ms": 4.692292073741555
+    },
+    {
+      "case_id": "security-password-policy",
+      "question": "How often must employees rotate their passwords under the security policy?",
+      "answer": "Relevant context was retrieved from the uploaded documents. Configure OPENAI_API_KEY to enable LLM-generated answers.\n\nRecent conversation:\n(none)\n\nRetrieved context:\nSource: security-policy.txt\nInformation Security Policy. All employees must rotate account passwords every 90 days and enable multi-factor authentication on every corporate system. Shared credentials are prohibited, and suspected compromises must be reported to the security team within one hour of discovery.\n\nSource: employee-onboarding.txt\nEmployee Onboarding Guide. New hires must complete identity verification and laptop setup during their first week. Employees may enroll in health benefits within 30 days of their start date through the benefits enrollment portal. Missing this window requires waiting for the next open enrollment period unless a qualifying life event occurs.\n\nSource: product-faq.txt\nProduct FAQ. Customers are eligible for a refund within the 30-day refund window starting from the purchase date, provided the subscription has not been used beyond the trial limits. Refund requests should be sent to billing@acme.example with the original order number.\n\nSource: incident-response-runbook.txt\nIncident Response Runbook. When an on-call engineer declares a Severity 1 incident, the on-call incident commander must be notified immediately and a war room bridge opened within fifteen minutes. Lower severity incidents follow the standard triage queue during business hours.\n\nQuestion: How often must employees rotate their passwords under the security policy?",
+      "citations": [
+        "security-policy.txt",
+        "employee-onboarding.txt",
+        "product-faq.txt",
+        "incident-response-runbook.txt"
+      ],
+      "retrieval_passed": true,
+      "citation_passed": true,
+      "groundedness_passed": true,
+      "latency_ms": 2.6173749938607216
+    },
+    {
+      "case_id": "product-faq-refund",
+      "question": "What is the refund window described in the product FAQ?",
+      "answer": "Relevant context was retrieved from the uploaded documents. Configure OPENAI_API_KEY to enable LLM-generated answers.\n\nRecent conversation:\n(none)\n\nRetrieved context:\nSource: product-faq.txt\nProduct FAQ. Customers are eligible for a refund within the 30-day refund window starting from the purchase date, provided the subscription has not been used beyond the trial limits. Refund requests should be sent to billing@acme.example with the original order number.\n\nSource: vendor-contract-summary.txt\nVendor Contract Summary. The master services agreement with Acme Cloud Services renews annually and requires 60 days written notice to terminate before the renewal date. Early termination outside that window triggers an early-exit fee equal to one quarter of the annual contract value.\n\nSource: security-policy.txt\nInformation Security Policy. All employees must rotate account passwords every 90 days and enable multi-factor authentication on every corporate system. Shared credentials are prohibited, and suspected compromises must be reported to the security team within one hour of discovery.\n\nSource: incident-response-runbook.txt\nIncident Response Runbook. When an on-call engineer declares a Severity 1 incident, the on-call incident commander must be notified immediately and a war room bridge opened within fifteen minutes. Lower severity incidents follow the standard triage queue during business hours.\n\nQuestion: What is the refund window described in the product FAQ?",
+      "citations": [
+        "product-faq.txt",
+        "vendor-contract-summary.txt",
+        "security-policy.txt",
+        "incident-response-runbook.txt"
+      ],
+      "retrieval_passed": true,
+      "citation_passed": true,
+      "groundedness_passed": true,
+      "latency_ms": 2.7592498809099197
+    },
+    {
+      "case_id": "incident-response-severity",
+      "question": "Who must be notified when a Severity 1 incident is declared?",
+      "answer": "Relevant context was retrieved from the uploaded documents. Configure OPENAI_API_KEY to enable LLM-generated answers.\n\nRecent conversation:\n(none)\n\nRetrieved context:\nSource: incident-response-runbook.txt\nIncident Response Runbook. When an on-call engineer declares a Severity 1 incident, the on-call incident commander must be notified immediately and a war room bridge opened within fifteen minutes. Lower severity incidents follow the standard triage queue during business hours.\n\nSource: product-faq.txt\nProduct FAQ. Customers are eligible for a refund within the 30-day refund window starting from the purchase date, provided the subscription has not been used beyond the trial limits. Refund requests should be sent to billing@acme.example with the original order number.\n\nSource: security-policy.txt\nInformation Security Policy. All employees must rotate account passwords every 90 days and enable multi-factor authentication on every corporate system. Shared credentials are prohibited, and suspected compromises must be reported to the security team within one hour of discovery.\n\nSource: employee-onboarding.txt\nEmployee Onboarding Guide. New hires must complete identity verification and laptop setup during their first week. Employees may enroll in health benefits within 30 days of their start date through the benefits enrollment portal. Missing this window requires waiting for the next open enrollment period unless a qualifying life event occurs.\n\nQuestion: Who must be notified when a Severity 1 incident is declared?",
+      "citations": [
+        "incident-response-runbook.txt",
+        "product-faq.txt",
+        "security-policy.txt",
+        "employee-onboarding.txt"
+      ],
+      "retrieval_passed": true,
+      "citation_passed": true,
+      "groundedness_passed": true,
+      "latency_ms": 2.5994160678237677
+    },
+    {
+      "case_id": "vendor-contract-termination",
+      "question": "What notice period is required to terminate the vendor contract?",
+      "answer": "Relevant context was retrieved from the uploaded documents. Configure OPENAI_API_KEY to enable LLM-generated answers.\n\nRecent conversation:\n(none)\n\nRetrieved context:\nSource: vendor-contract-summary.txt\nVendor Contract Summary. The master services agreement with Acme Cloud Services renews annually and requires 60 days written notice to terminate before the renewal date. Early termination outside that window triggers an early-exit fee equal to one quarter of the annual contract value.\n\nSource: product-faq.txt\nProduct FAQ. Customers are eligible for a refund within the 30-day refund window starting from the purchase date, provided the subscription has not been used beyond the trial limits. Refund requests should be sent to billing@acme.example with the original order number.\n\nSource: security-policy.txt\nInformation Security Policy. All employees must rotate account passwords every 90 days and enable multi-factor authentication on every corporate system. Shared credentials are prohibited, and suspected compromises must be reported to the security team within one hour of discovery.\n\nSource: employee-onboarding.txt\nEmployee Onboarding Guide. New hires must complete identity verification and laptop setup during their first week. Employees may enroll in health benefits within 30 days of their start date through the benefits enrollment portal. Missing this window requires waiting for the next open enrollment period unless a qualifying life event occurs.\n\nQuestion: What notice period is required to terminate the vendor contract?",
+      "citations": [
+        "vendor-contract-summary.txt",
+        "product-faq.txt",
+        "security-policy.txt",
+        "employee-onboarding.txt"
+      ],
+      "retrieval_passed": true,
+      "citation_passed": true,
+      "groundedness_passed": true,
+      "latency_ms": 2.568707801401615
+    }
+  ]
+}
