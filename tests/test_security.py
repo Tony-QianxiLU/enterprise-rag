@@ -42,7 +42,16 @@ def test_create_and_decode_access_token_round_trip(settings: Settings) -> None:
 
 def test_decode_tampered_token_raises_invalid_token_error(settings: Settings) -> None:
     token = create_access_token(subject="user@example.com", role="user", settings=settings)
-    tampered = token[:-1] + ("a" if token[-1] != "a" else "b")
+    header, payload, signature = token.split(".")
+    # Flip a character in the middle of the payload segment rather than the
+    # token's last character -- base64url's final character can land on
+    # padding bits that don't change the decoded bytes, which made this test
+    # flaky (it passed locally but failed in CI on an unlucky token value).
+    mid = len(payload) // 2
+    flipped = "a" if payload[mid] != "a" else "b"
+    tampered_payload = payload[:mid] + flipped + payload[mid + 1 :]
+    tampered = ".".join([header, tampered_payload, signature])
+
     with pytest.raises(InvalidTokenError):
         decode_access_token(tampered, settings)
 
