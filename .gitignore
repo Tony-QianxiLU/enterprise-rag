@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local data, uploads, vector store, and database (regenerated at runtime)
+data/
+!data/
+!data/evaluation_cases.jsonl
+chroma_db/
+chroma_llamaindex_db/
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
